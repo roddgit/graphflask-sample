@@ -1,0 +1,78 @@
+url = [DOMAIN]/graphql
+
+sample query=
+{
+  allEnemies {
+    edges {
+      node {
+        name,
+        amount
+      }
+    }
+  }
+}
+
+
+{
+  allPowerups {
+    edges {
+      node {
+        name
+      }
+    }
+  }
+}
+
+
+{
+  allLevels(name: "World 1-2") {
+    edges {
+      node {
+        name
+        description
+      }
+    }
+  }
+}
+
+
+query {
+    allLevels {
+      edges {
+        node {
+          name,
+          description,
+          enemies {
+            edges {
+              node {
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+query{
+  findPowerups(id: 1){
+    name 
+  }
+}
+
+
+sample structure = 
+
+{
+   __type(name:"Level") {
+      fields {
+         name
+         description
+      }  
+   }
+}
+
+
+

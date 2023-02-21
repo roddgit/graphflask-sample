@@ -1,0 +1,7 @@
+graphene-mongo==0.2.10
+graphene==2.1.9
+Flask==2.0.2
+Flask-GraphQL==2.0.1
+graphql-core==2.3.2
+mongoengine==0.26.0
+jsonpath==0.82
