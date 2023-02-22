@@ -55,14 +55,6 @@ query {
   }
 
 
-
-query{
-  findPowerups(id: 1){
-    name 
-  }
-}
-
-
 sample structure = 
 
 {
